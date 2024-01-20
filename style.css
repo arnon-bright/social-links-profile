@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --DarkGrey: hsl(0, 0%, 12%);
+    --OffBlack: hsl(0, 0%, 8%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--OffBlack);
+    font-family: 'Inter', sans-serif;
+}
+
+.card {
+    background-color: var(--DarkGrey);
+    border-radius: 0.5rem;
+    display: grid;
+    place-items: center;
+    padding: 1rem 2rem;
+}
+
+img {
+    border-radius: 10rem;
+    display: block;
+    align-items: center;
+    max-width: 70px;
+    margin-bottom: 20px;
+}
+
+.name {
+    color: var(--White);
+    place-content: center;
+    margin-bottom: 5px;
+    font-size: 10px;
+}
+
+.location {
+    color: var(--Green);
+    font-weight: 600;
+    margin-bottom: 25px;
+    font-size: 12px;
+}
+
+.info {
+    color: var(--White);
+    font-size: 11px;
+    margin-bottom: 25px;
+}
+
+.button {
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+.btn {
+    border: none;
+    text-decoration: none;
+    color: var(--White);
+    background-color: var(--Grey);
+    font-size: 13px;
+    font-weight: 600;
+    min-width: 15rem;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.btn:hover {
+    color: var(--OffBlack);
+    background-color: var(--Green);
+    cursor: pointer;
+}
+
+.attribution {
+    margin-top: 1rem;
+    color: var(--White);
+}
+
+@media screen (min-width: 375px) {
+    .card {
+        height: 100vh;
+    }
+}
